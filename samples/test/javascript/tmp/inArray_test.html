@@ -18,6 +18,13 @@ test('Retorna indice do valor passado.', function() {
 	equals( inArray(arr, 'marcio'), 1, 'A string "marcio" esta no indice 1' );
 });
 
+test('Retorna -1 casso valor passado não esteja no array.', function() {
+	var arr = ['felipe', 'marcio', 'qcon'];
+
+	equals( inArray(arr, 'hanoi'), -1, 'A string "hanoi" nao esta no array' );
+});
+
+
       });
     </script>
 </head>
