@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>QUnit Test Suite</title>
+	<link href="/testsuite.css" rel="stylesheet" type="text/css" />
+    <script src="/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/testrunner.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/inArray.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function(){
+          //Verificar valor em um array, caso positivo retornar indice, caso negativo retornar -1
+
+module("testes inArray");
+test('Retorna indice do valor passado.', function() {
+	var arr = ['felipe', 'marcio', 'qcon'];
+
+	equals( inArray(arr, 'marcio'), 1, 'A string "marcio" esta no indice 1' );
+});
+
+      });
+    </script>
+</head>
+<body>
+	<h1 id="qunit-header">QUnit Test Suite - INARRAY_TEST</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+	     
+	</div>
+</body>
+</html>
+
